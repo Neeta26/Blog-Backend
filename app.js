@@ -11,12 +11,12 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get("/", (req, res) => {
-  res.send("<h1>Home Page </h1>");
-});
-app.get("*", (req, res) => {
-  res.send("<h1>Dashboard Page</h1>");
-});
+// app.get("/home", (req, res) => {
+//   res.send("<h1>Home Page </h1>");
+// });
+// app.get("/dashboard", (req, res) => {
+//   res.send("<h1>Dashboard Page</h1>");
+// });
 
 app.use("/blogs", router);
 app.listen(process.env.PORT, console.log(`App started on ${process.env.PORT}`));
