@@ -21,3 +21,5 @@ Execution(Terminal)-- npm run start.
 
 Configure(config.env)-- PORT="Write port number on which you want to start the app server."
 
+Live link(Heroku) Url-- https://blogbackend26.herokuapp.com/blogs/
+
